@@ -1,6 +1,6 @@
 const fs = require('fs/promises')
 
-const myFileWriter = async (fileName, fileContent) => {
+const myFileWriter = async (fileName, fileContent="I am testing creation of file with content new updated line") => {
 	fs.writeFile(fileName,fileContent);
 }
 
@@ -9,7 +9,7 @@ const myFileReader = async (fileName) => {
 }
 
 
-const myFileUpdater = async (fileName, fileContent) => {
+const myFileUpdater = async (fileName, fileContent="I am testing creation of file with content new updated line") => {
 	fs.appendFile(fileName,fileContent)
 }
 
